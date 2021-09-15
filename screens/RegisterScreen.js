@@ -71,7 +71,7 @@ const RegisterScreen = ({ navigation }) => {
                 onChangeText={text => setImageUrl(text)}
                 />
             <Button title="register" style={styles.button} onPress={register} />
-            <Text>{errorMessage}</Text>
+            <Text style={styles.error}>{errorMessage}</Text>
         </View>
     )
 }
@@ -87,5 +87,8 @@ const styles = StyleSheet.create({
     button: {
         width: 200,
         marginTop: 10
+    },
+    error: {
+        color: 'red'
     }
 })

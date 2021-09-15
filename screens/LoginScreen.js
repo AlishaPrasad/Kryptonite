@@ -36,7 +36,7 @@ const LoginScreen = ({ navigation }) => {
                 />
             <Button title="login" style={styles.button} onPress={signIn} />
             <Button title="register" style={styles.button} onPress={() => navigation.navigate('Register')} />
-            <Text>{errorMessage}</Text>
+            <Text style={styles.error}>{errorMessage}</Text>
         </View>
     )
 }
@@ -52,5 +52,8 @@ const styles = StyleSheet.create({
     button: {
         width: 200,
         marginTop: 10
+    },
+    error: {
+        color: 'red'
     }
 })
