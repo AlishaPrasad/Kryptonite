@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useEffect, useCallback } from 'react'
+import React, { useState, useLayoutEffect, useCallback } from 'react'
 import { View, TouchableOpacity  } from 'react-native'
 import { Avatar } from 'react-native-elements';
 import { AntDesign } from 'react-native-vector-icons'

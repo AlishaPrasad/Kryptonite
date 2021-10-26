@@ -1,8 +1,9 @@
     
 import React, { useState } from 'react'
-import { View, StyleSheet, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import { Input, Button } from 'react-native-elements'
 import { auth } from '../firebase'
+import styles from './styles'
 
 const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState('');
@@ -42,18 +43,3 @@ const LoginScreen = ({ navigation }) => {
 }
 
 export default LoginScreen
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        padding: 10
-    },
-    button: {
-        width: 200,
-        marginTop: 10
-    },
-    error: {
-        color: 'red'
-    }
-})
